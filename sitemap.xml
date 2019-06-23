@@ -2,72 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/06/23/TestCode/</loc>
-    
-    <lastmod>2019-06-23T10:29:03.699Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
-    <lastmod>2019-06-23T09:57:24.160Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2019-06-23T09:55:14.224Z</lastmod>
+    <lastmod>2019-06-23T14:42:51.251Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2019-06-23T09:53:38.800Z</lastmod>
+    <lastmod>2019-06-23T14:42:51.251Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/index.html</loc>
+    <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2019-06-22T08:24:51.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/06/21/%E8%80%81%E9%93%81/</loc>
-    
-    <lastmod>2019-06-22T08:24:23.701Z</lastmod>
+    <lastmod>2019-06-23T14:42:51.251Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/06/21/hello-world/</loc>
+    <loc>http://yoursite.com/2019/06/23/TestCode/</loc>
     
-    <lastmod>2019-06-22T08:23:21.189Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/06/21/%E6%B5%8B%E8%AF%95-post/</loc>
-    
-    <lastmod>2019-06-22T07:42:12.017Z</lastmod>
+    <lastmod>2019-06-23T14:42:51.249Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/06/21/sonofgod/</loc>
+    <loc>http://yoursite.com/2019/06/22/hello-world/</loc>
     
-    <lastmod>2019-06-22T07:42:12.015Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/06/21/post-title-with-whitespace/</loc>
-    
-    <lastmod>2019-06-22T07:42:12.013Z</lastmod>
+    <lastmod>2019-06-23T14:42:51.248Z</lastmod>
     
   </url>
   

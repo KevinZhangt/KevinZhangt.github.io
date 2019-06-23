@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-23T10:29:03.699Z</updated>
+  <updated>2019-06-23T14:42:51.249Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,9 @@
     <link href="http://yoursite.com/2019/06/23/TestCode/"/>
     <id>http://yoursite.com/2019/06/23/TestCode/</id>
     <published>2019-06-23T01:24:00.000Z</published>
-    <updated>2019-06-23T10:29:03.699Z</updated>
+    <updated>2019-06-23T14:42:51.249Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>这是简单的介绍</p><a id="more"></a><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><figure class="hljs highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs objc">[rectangle setX: <span class="hljs-number">10</span> y: <span class="hljs-number">10</span> width: <span class="hljs-number">20</span> height: <span class="hljs-number">20</span>];<br></code></pre></td></tr></table></figure><h1 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h1><figure class="hljs highlight java"><figcaption><span>TestUtil.java www.baidu.com</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> com.qunar.flightdata.portrait.realtime.utils;<br><br><span class="hljs-keyword">import</span> com.fasterxml.jackson.databind.DeserializationFeature;<br><span class="hljs-keyword">import</span> com.fasterxml.jackson.databind.JsonNode;<br><span class="hljs-keyword">import</span> com.fasterxml.jackson.databind.ObjectMapper;<br><span class="hljs-keyword">import</span> org.slf4j.Logger;<br><span class="hljs-keyword">import</span> org.slf4j.LoggerFactory;<br><br><span class="hljs-keyword">import</span> java.io.IOException;<br><span class="hljs-keyword">import</span> java.text.SimpleDateFormat;<br><span class="hljs-keyword">import</span> java.util.List;<br><br><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JsonUtils</span> </span>&#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Logger logger = LoggerFactory.getLogger(JsonUtils.class);<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ObjectMapper objectMapper = <span class="hljs-keyword">new</span> ObjectMapper();<br><br>    <span class="hljs-keyword">static</span> &#123;<br>        objectMapper.setDateFormat(<span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"yyyy-MM-dd HH:mm:ss"</span>));<br>        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, <span class="hljs-keyword">false</span>);<br><br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> ObjectMapper <span class="hljs-title">getObjectMapper</span><span class="hljs-params">()</span> </span>&#123;<br>        <span class="hljs-keyword">return</span> objectMapper;<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">obj2Json</span><span class="hljs-params">(Object o)</span> </span>&#123;<br>        <span class="hljs-keyword">try</span> &#123;<br>            <span class="hljs-keyword">return</span> objectMapper.writeValueAsString(o);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            logger.error(<span class="hljs-string">"obj2json error:"</span>, e);<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;T&gt; <span class="hljs-function">T <span class="hljs-title">json2Obj</span><span class="hljs-params">(String content, Class&lt;T&gt; valueType)</span> </span>&#123;<br>        <span class="hljs-keyword">try</span> &#123;<br>            <span class="hljs-keyword">return</span> objectMapper.readValue(content, valueType);<br><br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            logger.error(<span class="hljs-string">"json2Obj error:"</span>, e);<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">obj2Json</span><span class="hljs-params">(Object o, SimpleDateFormat sdf)</span> </span>&#123;<br>        <span class="hljs-keyword">try</span> &#123;<br>            ObjectMapper om = <span class="hljs-keyword">new</span> ObjectMapper();<br>            om.setDateFormat(sdf);<br>            <span class="hljs-keyword">return</span> om.writeValueAsString(o);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            logger.error(<span class="hljs-string">"obj2json error:"</span>, e);<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getAttribute</span><span class="hljs-params">(String content, String filedName)</span> </span>&#123;<br>        <span class="hljs-keyword">try</span> &#123;<br>            JsonNode jsonNode = objectMapper.readTree(content);<br>            JsonNode filedValue = jsonNode.findPath(filedName);<br>            <span class="hljs-keyword">return</span> filedValue == <span class="hljs-keyword">null</span> ? <span class="hljs-keyword">null</span> : filedValue.asText();<br>        &#125; <span class="hljs-keyword">catch</span> (IOException e) &#123;<br>            logger.error(<span class="hljs-string">"Not invalid json format！&#123;&#125;"</span>, content, e);<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><h1 id="MarkDown-Grammer"><a href="#MarkDown-Grammer" class="headerlink" title="MarkDown Grammer"></a>MarkDown Grammer</h1><figure class="hljs highlight java"><figcaption><span>TestUtil.java www.baidu.com</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getAttribute</span><span class="hljs-params">(String content, String filedName)</span> </span>&#123;<br>        <span class="hljs-keyword">try</span> &#123;<br>            JsonNode jsonNode = objectMapper.readTree(content);<br>            JsonNode filedValue = jsonNode.findPath(filedName);<br>            <span class="hljs-keyword">return</span> filedValue == <span class="hljs-keyword">null</span> ? <span class="hljs-keyword">null</span> : filedValue.asText();<br>        &#125; <span class="hljs-keyword">catch</span> (IOException e) &#123;<br>            logger.error(<span class="hljs-string">"Not invalid json format！&#123;&#125;"</span>, content, e);<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>        &#125;<br>    &#125;<br></code></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -38,19 +40,18 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/06/21/hello-world/"/>
-    <id>http://yoursite.com/2019/06/21/hello-world/</id>
+    <link href="http://yoursite.com/2019/06/22/hello-world/"/>
+    <id>http://yoursite.com/2019/06/22/hello-world/</id>
     <published>2019-06-21T23:42:00.000Z</published>
-    <updated>2019-06-22T08:23:21.189Z</updated>
+    <updated>2019-06-23T14:42:51.248Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
     
     </summary>
@@ -63,93 +64,6 @@
       <category term="t1" scheme="http://yoursite.com/tags/t1/"/>
     
       <category term="te" scheme="http://yoursite.com/tags/te/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>post title with whitespace</title>
-    <link href="http://yoursite.com/2019/06/21/post-title-with-whitespace/"/>
-    <id>http://yoursite.com/2019/06/21/post-title-with-whitespace/</id>
-    <published>2019-06-21T19:35:48.000Z</published>
-    <updated>2019-06-22T07:42:12.013Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>sonofgod</title>
-    <link href="http://yoursite.com/2019/06/21/sonofgod/"/>
-    <id>http://yoursite.com/2019/06/21/sonofgod/</id>
-    <published>2019-06-21T18:45:57.000Z</published>
-    <updated>2019-06-22T07:42:12.015Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;答复&quot;&gt;&lt;a href=&quot;#答复&quot; class=&quot;headerlink&quot; title=&quot;答复&quot;&gt;&lt;/a&gt;答复&lt;/h1&gt;&lt;p&gt;案发时&lt;br&gt;sdaffdsvad&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/pasted-2.png&quot; alt=&quot;upload
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>老铁</title>
-    <link href="http://yoursite.com/2019/06/21/%E8%80%81%E9%93%81/"/>
-    <id>http://yoursite.com/2019/06/21/老铁/</id>
-    <published>2019-06-21T18:43:00.000Z</published>
-    <updated>2019-06-22T08:24:23.701Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;了哦啊&quot;&gt;&lt;a href=&quot;#了哦啊&quot; class=&quot;headerlink&quot; title=&quot;了哦啊&quot;&gt;&lt;/a&gt;了哦啊&lt;/h2&gt;&lt;p&gt;发大师傅&lt;br&gt;&lt;code&gt;bottt&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&quot;hljs highlight
-        
-      
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="tag" scheme="http://yoursite.com/tags/tag/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试 post</title>
-    <link href="http://yoursite.com/2019/06/21/%E6%B5%8B%E8%AF%95-post/"/>
-    <id>http://yoursite.com/2019/06/21/测试-post/</id>
-    <published>2019-06-21T18:36:00.000Z</published>
-    <updated>2019-06-22T07:42:12.017Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;title: hello hexo markdown&lt;br&gt;date: 2016-11-16
-        
-      
-    
-    </summary>
-    
     
   </entry>
   
