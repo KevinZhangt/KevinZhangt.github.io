@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Kevin&#39;s blog</title>
   
-  
+  <subtitle>Stay hangry, stay foolish</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>KevinZhang</name>
     
   </author>
   
@@ -18,9 +18,9 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/06/22/hello-world/"/>
-    <id>http://yoursite.com/2019/06/22/hello-world/</id>
-    <published>2019-06-22T07:42:00.000Z</published>
+    <link href="http://yoursite.com/2019/06/21/hello-world/"/>
+    <id>http://yoursite.com/2019/06/21/hello-world/</id>
+    <published>2019-06-21T23:42:00.000Z</published>
     <updated>2019-06-22T08:23:21.189Z</updated>
     
     <summary type="html">
@@ -48,9 +48,9 @@
   
   <entry>
     <title>post title with whitespace</title>
-    <link href="http://yoursite.com/2019/06/22/post-title-with-whitespace/"/>
-    <id>http://yoursite.com/2019/06/22/post-title-with-whitespace/</id>
-    <published>2019-06-22T03:35:48.000Z</published>
+    <link href="http://yoursite.com/2019/06/21/post-title-with-whitespace/"/>
+    <id>http://yoursite.com/2019/06/21/post-title-with-whitespace/</id>
+    <published>2019-06-21T19:35:48.000Z</published>
     <updated>2019-06-22T07:42:12.013Z</updated>
     
     <summary type="html">
@@ -62,9 +62,9 @@
   
   <entry>
     <title>sonofgod</title>
-    <link href="http://yoursite.com/2019/06/22/sonofgod/"/>
-    <id>http://yoursite.com/2019/06/22/sonofgod/</id>
-    <published>2019-06-22T02:45:57.000Z</published>
+    <link href="http://yoursite.com/2019/06/21/sonofgod/"/>
+    <id>http://yoursite.com/2019/06/21/sonofgod/</id>
+    <published>2019-06-21T18:45:57.000Z</published>
     <updated>2019-06-22T07:42:12.015Z</updated>
     
     <summary type="html">
@@ -85,9 +85,9 @@
   
   <entry>
     <title>老铁</title>
-    <link href="http://yoursite.com/2019/06/22/%E8%80%81%E9%93%81/"/>
-    <id>http://yoursite.com/2019/06/22/老铁/</id>
-    <published>2019-06-22T02:43:00.000Z</published>
+    <link href="http://yoursite.com/2019/06/21/%E8%80%81%E9%93%81/"/>
+    <id>http://yoursite.com/2019/06/21/老铁/</id>
+    <published>2019-06-21T18:43:00.000Z</published>
     <updated>2019-06-22T08:24:23.701Z</updated>
     
     <summary type="html">
@@ -112,9 +112,9 @@
   
   <entry>
     <title>测试 post</title>
-    <link href="http://yoursite.com/2019/06/22/%E6%B5%8B%E8%AF%95-post/"/>
-    <id>http://yoursite.com/2019/06/22/测试-post/</id>
-    <published>2019-06-22T02:36:00.000Z</published>
+    <link href="http://yoursite.com/2019/06/21/%E6%B5%8B%E8%AF%95-post/"/>
+    <id>http://yoursite.com/2019/06/21/测试-post/</id>
+    <published>2019-06-21T18:36:00.000Z</published>
     <updated>2019-06-22T07:42:12.017Z</updated>
     
     <summary type="html">
